@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 app.use('isAlive', (a, b) => {
-    b.status(200).send("alive")
+    b.status(200).send("alive1")
 })
 app.use('/api/login', logIn);
 app.use('/api/users', usersCollection);
